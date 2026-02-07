@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Khoảnh khắc</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<a href="index.html">Trang chủ</a>
+<a href="gioithieu.html">Giới thiệu</a>
+<a href="ynghia.html">Ý nghĩa</a>
+<a href="thayco.html">Thầy cô</a>
+<a href="camnghi.html">Cảm nghĩ</a>
+<a href="khoanhkhac.html">Khoảnh khắc</a>
+<a href="gopy.html">Góp ý</a>
+</nav>
+
+<main>
+<section class="card">
+<h2>Khoảnh khắc thầy trò đáng nhớ</h2>
+
+<div class="gallery">
+<img src="images/kn1.jpg" alt="">
+<img src="images/kn2.jpg" alt="">
+<img src="images/kn3.jpg" alt="">
+<img src="images/kn4.jpg" alt="">
+</div>
+
+<p>
+Mỗi bức ảnh là một kỷ niệm, mỗi khoảnh khắc là một phần thanh xuân tươi đẹp
+không thể nào quên của tuổi học trò dưới mái trường THPT Lê Quý Đôn.
+</p>
+
+</section>
+</main>
+
+<footer>
+<h4>BÁO TƯỜNG TRI ÂN</h4>
+<p>
+Nhóm 3 – Trường THPT Lê Quý Đôn <br>
+Thành viên: Cát Tường, Quỳnh Thư, Ngọc Khuê, Khánh, Phan Quân, Văn Cường
+</p>
+</footer>
+<!-- NHẠC (CHỈ 1 CÁI DUY NHẤT) -->
+<audio id="bg-music" src="phep-mau.mp3"></audio>
+
+<script>
+document.body.addEventListener("click", function () {
+  const music = document.getElementById("bg-music");
+  music.volume = 0.25;
+  music.play().catch(()=>{});
+}, { once: true });
+</script>
+
+</body>
+</html>

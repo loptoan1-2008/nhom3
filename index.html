@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Uống nước nhớ nguồn</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div>
+    <h1>UỐNG NƯỚC NHỚ NGUỒN</h1>
+    <p>
+      Tri ân thầy cô – Những người lặng lẽ gieo chữ,
+      chắp cánh ước mơ cho bao thế hệ học trò.
+    </p>
+    <a href="gioithieu.html" class="btn">Bắt đầu hành trình tri ân</a>
+  </div>
+</header>
+
+<audio id="bg-music" src="phep-mau.mp3"></audio>
+
+<script>
+document.body.addEventListener("click", function () {
+  const music = document.getElementById("bg-music");
+  music.volume = 0.25;
+  music.play().catch(()=>{});
+}, { once: true });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Giới thiệu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<a href="index.html">Trang chủ</a>
+<a href="gioithieu.html">Giới thiệu</a>
+<a href="ynghia.html">Ý nghĩa</a>
+<a href="thayco.html">Thầy cô</a>
+<a href="camnghi.html">Cảm nghĩ</a>
+<a href="khoanhkhac.html">Khoảnh khắc</a>
+<a href="gopy.html">Góp ý</a>
+</nav>
+
+<main>
+<section class="card">
+<h2>Giới thiệu chủ đề</h2>
+
+<p>
+“Uống nước nhớ nguồn” là truyền thống đạo lý tốt đẹp của dân tộc Việt Nam,
+thể hiện lòng biết ơn sâu sắc đối với những người đã tạo nên giá trị cho cuộc sống hôm nay.
+</p>
+
+<img src="images/truong2.jpg" alt="Hoạt động tại trường">
+
+<p>
+Trong môi trường học đường, đạo lý ấy thể hiện rõ qua tình cảm,
+sự kính trọng và lòng biết ơn của học sinh đối với thầy cô giáo.
+</p>
+
+<p>
+Báo tường điện tử này là sản phẩm của Nhóm 3,
+được thực hiện với mong muốn bày tỏ lòng tri ân chân thành đến các thầy cô.
+</p>
+
+</section>
+</main>
+
+<footer>
+<h4>BÁO TƯỜNG TRI ÂN</h4>
+<p>
+Nhóm 3 – Trường THPT Lê Quý Đôn <br>
+Thành viên: Cát Tường, Quỳnh Thư, Ngọc Khuê, Khánh, Phan Quân, Văn Cường
+</p>
+</footer>
+<!-- 🎵 NHẠC PHÉP MÀU -->
+<audio id="bg-music">
+  <source src="phep-mau.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+window.onload = function(){
+  const music = document.getElementById("bg-music");
+  music.volume = 0.25;
+
+  document.addEventListener("click", function(){
+    music.play().catch(()=>{});
+  }, {once:true});
+};
+</script>
+
+</body>
+</html>
